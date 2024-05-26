@@ -1,0 +1,9 @@
+@use "../abstracts" as *;
+
+header {
+  margin-top: 3rem;
+
+  @include breakpoint(desktop) {
+    margin-top: 5rem;
+  }
+}

@@ -1,0 +1,35 @@
+.button {
+    border-radius: 29px;
+    font-weight: 900;
+    color: var(--clr-neutral-200);
+    padding: 1rem 2.5rem;
+    margin-top: 0.5rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.button[data-type="primary"] {
+    background-color: var(--clr-primary-400);
+
+    span {
+        color: var(--clr-primary-200);
+    }
+
+    &:hover,
+    &:focus {
+        background-color: var(--clr-primary-300);
+    }
+}
+
+.button[data-type="secondary"] {
+    background-color: var(--clr-accent-400);
+
+    span {
+        color: var(--clr-accent-200);
+    }
+
+    &:hover,
+    &:focus {
+        background-color: var(--clr-accent-300);
+    }
+}

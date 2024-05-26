@@ -1,0 +1,27 @@
+@use "../abstracts" as *;
+
+.numbering {
+    margin-top: 1.6;
+
+    @include breakpoint(tablet) {
+    }
+}
+
+.numbering__vertical-line {
+    border-left: 1px solid rgba(135, 135, 157, 0.25);
+    height: 84px;
+    width: 1px;
+}
+
+.numbering__section-number {
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 100%;
+    border: 1px solid rgba(135, 135, 157, 0.25);
+    background-color: var(--clr-neutral-200);
+    font-weight: 900;
+}
+
+.numbering[data-position="low"] {
+    margin-bottom: -1.75rem;
+}

@@ -8,7 +8,7 @@
   "scripts": {
     "build:sass": "sass  --no-source-map scss:./",
     "watch:sass": "sass  --no-source-map --watch scss:./",
-    "server": "browser-sync start --server",
+    "server": "browser-sync start --server --files ./",
     "purgecss": "purgecss --css *.css --content *.html *.js --output ./",
     "postcss": "postcss *.css -u autoprefixer cssnano -r --no-map",
     "start": "run-p watch:* server",

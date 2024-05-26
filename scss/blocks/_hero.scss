@@ -1,0 +1,66 @@
+@use "../abstracts" as *;
+
+.hero {
+    max-width: 94rem;
+    place-items: center;
+    margin-top: 3.4rem;
+    overflow: hidden;
+
+    @include breakpoint(tablet) {
+        margin-top: 3.8rem;
+    }
+
+    @include breakpoint(desktop) {
+        grid-template-columns: 1fr 33.75rem 1fr;
+        gap: 5.5rem;
+        margin-bottom: 2.4rem;
+    }
+}
+
+.hero__left img,
+.hero__right img {
+    max-width: calc(100% + 40px);
+    margin-left: -20px;
+
+    @include breakpoint(tablet) {
+        max-width: none;
+        margin-left: 0;
+    }
+
+    @include breakpoint(desktop) {
+        max-width: none;
+        margin-left: 0;
+    }
+}
+
+.hero__right {
+    display: none;
+
+    @include breakpoint(desktop) {
+        display: block;
+    }
+}
+
+.hero__content {
+    text-align: center;
+    max-width: calc(100vw - 3rem);
+    margin-top: 3rem;
+
+    h1 {
+        margin-inline: 1.5rem;
+    }
+
+    @include breakpoint(tablet) {
+        max-width: 28.5rem;
+        margin-top: 4.5rem;
+
+        h1 {
+            margin-inline: 3rem;
+        }
+    }
+
+    @include breakpoint(desktop) {
+        max-width: 33.75rem;
+        margin-top: 0;
+    }
+}

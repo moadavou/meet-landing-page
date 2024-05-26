@@ -1,0 +1,13 @@
+@use "../abstracts" as *;
+
+.section:not(first-child) {
+    margin-top: var(--section-space, 4rem);
+
+    @include breakpoint(tablet) {
+        margin-top: var(--section-space, 5rem);
+    }
+
+    @include breakpoint(desktop) {
+        margin-top: var(--section-space, 4.5rem);
+    }
+}
