@@ -1,29 +1,41 @@
 @use "../abstracts" as *;
 
 :root {
-  @each $color, $shades in $colors {
-    @each $shade, $value in $shades {
-      --clr-#{$color}-#{$shade}: #{$value};
+    // Create hsl color variables from abstracts/colors
+    @each $color, $shades in $colors-hsl {
+        @each $shade, $value in $shades {
+            --clr-#{$color}-#{$shade}-hsl: #{$value};
+        }
     }
-  }
 
-  @each $screen-size, $font-size in $type-scale {
-    @if $screen-size == small {
-      @each $size, $value in $font-size {
-        --fs-#{$size}: #{$value};
-      }
-    } @else if $screen-size == medium {
-      @include breakpoint(tablet) {
-        @each $size, $value in $font-size {
-          --fs-#{$size}: #{$value};
+    // Create color variables from abstracts/colors
+    @each $color, $shades in $colors {
+        @each $shade, $value in $shades {
+            --clr-#{$color}-#{$shade}: hsl(var(--clr-#{$color}-#{$shade}-hsl));
         }
-      }
-    } @else {
-      @include breakpoint(desktop) {
-        @each $size, $value in $font-size {
-          --fs-#{$size}: #{$value};
-        }
-      }
     }
-  }
+
+    // Create font-size variables from abstracts/type-scale
+    @each $screen-size, $font-size in $type-scale {
+        @if $screen-size == small {
+            @each $size, $value in $font-size {
+                --fs-#{$size}: #{$value};
+            }
+        }
+
+        // Create media queries for font sizes using abstracts/breakpoints
+        @else if $screen-size == medium {
+            @include breakpoint(tablet) {
+                @each $size, $value in $font-size {
+                    --fs-#{$size}: #{$value};
+                }
+            }
+        } @else {
+            @include breakpoint(desktop) {
+                @each $size, $value in $font-size {
+                    --fs-#{$size}: #{$value};
+                }
+            }
+        }
+    }
 }

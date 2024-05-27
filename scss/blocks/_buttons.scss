@@ -1,10 +1,11 @@
 .button {
+    padding: 1rem 2.5rem;
+    margin-top: 2rem;
     border-radius: 29px;
     font-weight: 900;
     color: var(--clr-neutral-200);
-    padding: 1rem 2.5rem;
-    margin-top: 0.5rem;
     text-decoration: none;
+    text-align: center;
     transition: background-color 0.3s ease;
 }
 
@@ -32,4 +33,13 @@
     &:focus {
         background-color: var(--clr-accent-300);
     }
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    --flow-space: 0;
 }

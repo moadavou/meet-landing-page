@@ -27,14 +27,12 @@
             <a href="#"><img src="./assets/logo.svg" alt="Meet - Home" /></a>
         </header>
 
-        <main class="[ grid ]">
-            <section
-                aria-labelledby="page-heading"
-                class="[ hero ] [ [ grid ] ]">
-                <picture class="hero__left">
+        <main class="[ grid-center ]">
+            <section aria-labelledby="page-heading" class="[ hero ]">
+                <picture class="[ hero__left ]">
                     <source
                         srcset="./assets/desktop/image-hero-left.png"
-                        media="(min-width: 85rem)" />
+                        media="(min-width: 80rem)" />
                     <img
                         src="./assets/tablet/image-hero.png"
                         alt="A grid of circular profile pictures, featuring headshots of diverse individuals, arranged in two zig-zag rows." />
@@ -45,19 +43,19 @@
                         Meet makes it easy to connect with others face-to-face
                         virtually and collaborate across any device.
                     </p>
-                    <div class="flex-center">
-                        <a href="#" class="button" data-type="primary"
+                    <div class="[ buttons ]">
+                        <a href="#" class="[ button ]" data-type="primary"
                             >Download <span>v1.3</span></a
                         >
-                        <a href="#" class="button" data-type="secondary"
+                        <a href="#" class="[ button ]" data-type="secondary"
                             >What is it?</a
                         >
                     </div>
                 </div>
-                <picture class="hero__right">
+                <picture class="[ hero__right ]">
                     <source
                         srcset="./assets/desktop/image-hero-right.png"
-                        media="(min-width: 85rem)" />
+                        media="(min-width: 80rem)" />
                     <img
                         src="./assets/tablet/image-hero.png"
                         alt="A grid of circular profile pictures, featuring headshots of diverse individuals, arranged in two zig-zag rows." />
@@ -66,9 +64,9 @@
 
             <section
                 aria-labelledby="meet-heading"
-                class="[ container section ] [ grid-center ]">
+                class="[ container section ]">
                 <div class="[ numbering ] [ grid-center ]">
-                    <div class="numbering__vertical-line"></div>
+                    <div class="[ numbering__vertical-line ]"></div>
                     <p class="[ numbering__section-number ] [ flex-center ]">
                         01
                     </p>
@@ -89,9 +87,9 @@
                         alt="A man is sitting on a light brown sofa, smiling and texting on his phone. There are black shelves with various items in the background." />
                 </div>
 
-                <div class="[ grid flow ] [ text-center ]">
-                    <p class="ribbon-text">Built for modern use</p>
-                    <h2 class="meet-heading">
+                <div class="[ flow ] [ text-center ]">
+                    <p class="[ ribbon-text ]">Built for modern use</p>
+                    <h2 id="meet-heading">
                         Smarter meetings, all in one place
                     </h2>
                     <p>
@@ -103,27 +101,27 @@
                 </div>
             </section>
 
-            <section
-                aria-labelledby="[ experience-heading ]"
-                class="[ section ]">
-                <div class="[ numbering ] [ grid ]" data-position="low">
+            <section aria-labelledby="cta-heading" class="[ section ]">
+                <div class="[ numbering ] [ grid-center ]" data-position="low">
                     <div class="[ numbering__vertical-line ]"></div>
                     <p class="[ numbering__section-number ] [ flex-center ]">
                         02
                     </p>
                 </div>
 
-                <div class="[ experience ] [ grid flow ]">
-                    <h2 class="[ text-neutral-200 ]" id="experience-heading">
-                        Experience more together
-                    </h2>
-                    <p class="[ text-neutral-200 ]">
-                        Stay connected with reliable HD meetings and unlimited
-                        one-on-one and group video sessions.
-                    </p>
-                    <a href="#" class="button" data-type="secondary"
-                        >Download <span>v1.3</span></a
-                    >
+                <div class="[ cta ] [ grid-center ]">
+                    <div class="[ cta__content ] [ grid-center flow ]">
+                        <h2 class="[ text-neutral-200 ]" id="cta-heading">
+                            Experience more together
+                        </h2>
+                        <p class="[ text-neutral-200 ]">
+                            Stay connected with reliable HD meetings and
+                            unlimited one-on-one and group video sessions.
+                        </p>
+                        <a href="#" class="[ button ]" data-type="secondary"
+                            >Download <span>v1.3</span></a
+                        >
+                    </div>
                 </div>
             </section>
         </main>

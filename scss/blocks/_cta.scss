@@ -1,0 +1,73 @@
+@use "../abstracts" as *;
+
+.cta {
+    width: 100vw;
+    text-align: center;
+    padding-top: 5.75rem;
+    padding-bottom: 4.5rem;
+    padding-inline: 1rem;
+
+    background-image: linear-gradient(
+            to top,
+            hsla(var(--clr-primary-400-hsl), 0.9),
+            hsla(var(--clr-primary-400-hsl), 0.9)
+        ),
+        url("assets/mobile/image-footer.jpg");
+    background-position: center;
+    background-size: cover;
+
+    @include breakpoint(tablet) {
+        padding-bottom: 4rem;
+        padding-inline: 6.2rem;
+        background-image: linear-gradient(
+                to top,
+                hsla(var(--clr-primary-400-hsl), 0.9),
+                hsla(var(--clr-primary-400-hsl), 0.9)
+            ),
+            url("assets/tablet/image-footer.jpg");
+    }
+
+    @include breakpoint(desktop) {
+        padding-bottom: 6.5rem;
+        padding-top: 6.5rem;
+        text-align: left;
+        background-image: linear-gradient(
+                to top,
+                hsla(var(--clr-primary-400-hsl), 0.9),
+                hsla(var(--clr-primary-400-hsl), 0.9)
+            ),
+            url("assets/desktop/image-footer.jpg");
+    }
+}
+
+.cta__content {
+    max-width: 69.4rem;
+
+    @include breakpoint(tablet) {
+        p {
+            margin-top: 2rem;
+        }
+
+        h2 {
+            margin-inline: 3.6rem;
+        }
+    }
+
+    @include breakpoint(desktop) {
+        grid-template-columns: 23.2rem 21.8rem 1fr;
+        gap: 5.75rem;
+
+        p {
+            margin-top: 0;
+        }
+
+        h2 {
+            margin-inline: 0;
+            padding-right: 2rem;
+        }
+
+        .button {
+            margin-top: 0;
+        }
+    }
+}

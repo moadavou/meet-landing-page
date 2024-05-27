@@ -1,8 +1,9 @@
 @use "../abstracts" as *;
 
 .hero {
-    max-width: 94rem;
+    display: grid;
     place-items: center;
+    max-width: 94rem;
     margin-top: 3.4rem;
     overflow: hidden;
 
@@ -11,6 +12,7 @@
     }
 
     @include breakpoint(desktop) {
+        place-items: start;
         grid-template-columns: 1fr 33.75rem 1fr;
         gap: 5.5rem;
         margin-bottom: 2.4rem;
@@ -26,11 +28,6 @@
         max-width: none;
         margin-left: 0;
     }
-
-    @include breakpoint(desktop) {
-        max-width: none;
-        margin-left: 0;
-    }
 }
 
 .hero__right {
@@ -38,6 +35,7 @@
 
     @include breakpoint(desktop) {
         display: block;
+        margin-top: 3.4rem;
     }
 }
 
@@ -56,6 +54,7 @@
 
         h1 {
             margin-inline: 3rem;
+            margin-top: 3.4rem;
         }
     }
 

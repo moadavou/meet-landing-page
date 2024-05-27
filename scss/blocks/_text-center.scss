@@ -24,7 +24,11 @@
     }
 
     @include breakpoint(desktop) {
-        margin-top: 5rem;
+        margin-top: 6rem;
         max-width: 33.75rem;
+
+        h2 {
+            margin-inline: 2rem;
+        }
     }
 }
