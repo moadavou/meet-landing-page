@@ -1,36 +1,37 @@
 @use "../abstracts" as *;
 
 body {
-  font-family: "Red Hat Display", sans-serif;
-  color: var(--clr-neutral-400);
-  line-height: 1.6;
-  font-size: var(--fs-400);
-  font-weight: 500;
+    font-family: "Red Hat Display", sans-serif;
+    color: var(--clr-neutral-400);
+    line-height: 1.625;
+    font-size: var(--fs-400);
+    font-weight: 500;
 
-  @include breakpoint(desktop) {
-    line-height: 1.4;
-  }
+    @include breakpoint(desktop) {
+        line-height: 1.4;
+    }
 }
 
 h1,
 h2 {
-  color: var(--clr-neutral-700);
-  line-height: 1;
-  font-weight: 900;
+    color: var(--clr-neutral-700);
+    font-weight: 900;
 }
 
 h1 {
-  font-size: var(--fs-600);
+    font-size: var(--fs-600);
+    line-height: 1;
 }
 
 h2 {
-  font-size: var(--fs-500);
+    font-size: var(--fs-500);
+    line-height: 1.1;
 }
 
 .ribbon-text {
-  font-size: 1rem;
-  letter-spacing: 4px;
-  text-transform: uppercase;
-  color: var(--clr-primary-400);
-  font-weight: 900;
+    font-size: 1rem;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--clr-primary-400);
+    font-weight: 900;
 }

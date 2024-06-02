@@ -1,9 +1,5 @@
 @use "../abstracts" as *;
 
-.numbering {
-    margin-top: 1.6;
-}
-
 .numbering__vertical-line {
     border-left: 1px solid hsla(var(--clr-neutral-400-hsl), 0.25);
     height: 84px;

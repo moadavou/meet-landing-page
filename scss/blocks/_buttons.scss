@@ -1,5 +1,5 @@
 .button {
-    padding: 1rem 2.5rem;
+    padding: 1rem 1.875rem;
     margin-top: 2rem;
     border-radius: 29px;
     font-weight: 900;
@@ -7,6 +7,10 @@
     text-decoration: none;
     text-align: center;
     transition: background-color 0.3s ease;
+}
+
+.button--wide {
+    padding: 1rem 2.5rem;
 }
 
 .button[data-type="primary"] {

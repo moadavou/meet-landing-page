@@ -28,8 +28,8 @@
     }
 
     @include breakpoint(desktop) {
-        padding-bottom: 6.5rem;
-        padding-top: 6.5rem;
+        padding-bottom: 5.68rem;
+        padding-top: 8rem;
         text-align: left;
         background-image: linear-gradient(
                 to top,
@@ -54,7 +54,7 @@
     }
 
     @include breakpoint(desktop) {
-        grid-template-columns: 23.2rem 21.8rem 1fr;
+        grid-template-columns: repeat(2, 21.875rem) 1fr;
         gap: 5.75rem;
 
         p {
