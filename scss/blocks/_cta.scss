@@ -41,6 +41,7 @@
 }
 
 .cta__content {
+    flex-direction: column;
     max-width: 69.4rem;
 
     @include breakpoint(tablet) {
@@ -54,20 +55,23 @@
     }
 
     @include breakpoint(desktop) {
-        grid-template-columns: repeat(2, 21.875rem) 1fr;
+        flex-direction: row;
         gap: 5.75rem;
 
         p {
             margin-top: 0;
+            margin-left: 2rem;
+            min-width: 21.8rem;
         }
 
         h2 {
             margin-inline: 0;
-            padding-right: 2rem;
+            min-width: 21.8rem;
         }
 
         .button {
             margin-top: 0;
+            white-space: nowrap;
         }
     }
 }

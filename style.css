@@ -463,6 +463,7 @@ header {
 }
 
 .cta__content {
+  flex-direction: column;
   max-width: 69.4rem;
 }
 @media (min-width: 48rem) {
@@ -475,17 +476,20 @@ header {
 }
 @media (min-width: 80rem) {
   .cta__content {
-    grid-template-columns: repeat(2, 21.875rem) 1fr;
+    flex-direction: row;
     gap: 5.75rem;
   }
   .cta__content p {
     margin-top: 0;
+    margin-left: 2rem;
+    min-width: 21.8rem;
   }
   .cta__content h2 {
     margin-inline: 0;
-    padding-right: 2rem;
+    min-width: 21.8rem;
   }
   .cta__content .button {
     margin-top: 0;
+    white-space: nowrap;
   }
 }
